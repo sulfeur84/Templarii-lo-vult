@@ -13,6 +13,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Valentin/Scripts/BaboucheGoBrrr.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Valentin/Scripts/BonusArmeTemp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Valentin/Scripts/BaboucheScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Valentin/Scripts/PiouPiou.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Valentin/Scripts/Ennemy.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="20gIwV4kcH7XYQ87nl4ZgABmJ2b" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -59,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636460045973</updated>
-      <workItem from="1636460055360" duration="1319000" />
+      <workItem from="1636460055360" duration="4544000" />
     </task>
     <servers />
   </component>
