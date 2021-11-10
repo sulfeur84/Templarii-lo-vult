@@ -9,8 +9,6 @@ public class Controller : MonoBehaviour
     [SerializeField]
     private float _speed = 10f;
     private Vector3 _move;
-    private Vector3 _rotate;
-    private float _angle;
     private Rigidbody rb;
     Vector3 rawInputMovement;
     void Start()
@@ -30,9 +28,7 @@ public class Controller : MonoBehaviour
 
         _move.x = gamepad.leftStick.x.ReadValue();
         _move.z = gamepad.leftStick.y.ReadValue();
-        _rotate = gamepad.rightStick.ReadValue();
         
-       
 
         if (UnityEngine.InputSystem.Gamepad.current is UnityEngine.InputSystem.XInput.XInputController)
         {
@@ -42,12 +38,13 @@ public class Controller : MonoBehaviour
             }
             if (gamepad.rightStick.x.IsActuated())
             {
-                transform.Rotate(0, _rotate.y, 0);
+                transform.Rotate(0, gamepad.rightStick.x.ReadValue(), 0);
             }
             if (gamepad.rightStick.y.IsActuated())
             {
-                transform.Rotate(0, -_rotate.y, 0);
+                transform.Rotate(0, gamepad.rightStick.y.ReadValue(), 0);
             }
+            
             if (gamepad.xButton.wasPressedThisFrame)
             {
                 Debug.Log("X Button is pressed.");
