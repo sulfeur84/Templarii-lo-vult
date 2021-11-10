@@ -1285,7 +1285,6 @@ GameObject:
   - component: {fileID: 103528410336171116}
   - component: {fileID: 103528410336171117}
   - component: {fileID: 103528410336171118}
-  - component: {fileID: 103528410336171119}
   m_Layer: 0
   m_Name: Boule
   m_TagString: Untagged
@@ -3512,20 +3511,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103528410336171113}
   m_Mesh: {fileID: 0}
---- !u!64 &103528410336171119
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103528410336171113}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &103528410448460411
 GameObject:
   m_ObjectHideFlags: 0
@@ -3573,7 +3558,6 @@ GameObject:
   - component: {fileID: 103528410492981420}
   - component: {fileID: 103528410492981421}
   - component: {fileID: 103528410492981422}
-  - component: {fileID: 103528410492981423}
   m_Layer: 0
   m_Name: Poto
   m_TagString: Untagged
@@ -5340,20 +5324,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103528410492981417}
   m_Mesh: {fileID: 0}
---- !u!64 &103528410492981423
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103528410492981417}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &1883840662169859782
 GameObject:
   m_ObjectHideFlags: 0
@@ -5366,7 +5336,6 @@ GameObject:
   - component: {fileID: 3971623944288579276}
   - component: {fileID: 5190827475333396057}
   - component: {fileID: 7645854835663563831}
-  - component: {fileID: 3445524650861771447}
   - component: {fileID: 871799977570317239}
   m_Layer: 0
   m_Name: DRAPO
@@ -5616,20 +5585,6 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1883840662169859782}
-  m_Mesh: {fileID: 0}
---- !u!64 &3445524650861771447
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883840662169859782}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!95 &871799977570317239
 Animator:

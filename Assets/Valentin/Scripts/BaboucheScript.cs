@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class BaboucheScript : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class BaboucheScript : MonoBehaviour
         public GameObject Ballbouche;
  
         void Update(){
- 
+            var gamepad = Gamepad.current;
             targetTime -= Time.deltaTime;
  
             if (targetTime <= 0.0f)
@@ -18,10 +19,14 @@ public class BaboucheScript : MonoBehaviour
                 timerEnded();
             }
 
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                Instantiate(Ballbouche, transform.position, transform.rotation);
-            }
+
+if (UnityEngine.InputSystem.Gamepad.current is UnityEngine.InputSystem.XInput.XInputController)
+{
+    if (gamepad.xButton.wasPressedThisFrame)
+    {
+        Instantiate(Ballbouche, transform.position, transform.rotation);
+    }
+}
  
         }
  

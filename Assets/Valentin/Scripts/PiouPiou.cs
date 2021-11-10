@@ -1,15 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PiouPiou : MonoBehaviour
 {
     public Animator animator;
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        var gamepad = Gamepad.current;
+        if (UnityEngine.InputSystem.Gamepad.current is UnityEngine.InputSystem.XInput.XInputController)
         {
-            animator.SetTrigger("Slash");
+            if (gamepad.xButton.wasPressedThisFrame)
+            {
+                animator.SetTrigger("Slash");
+            }
         }
     }
 }

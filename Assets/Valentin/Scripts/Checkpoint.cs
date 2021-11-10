@@ -21,6 +21,7 @@ public class Checkpoint : MonoBehaviour
         {
             RespawnScript.Apparition = Checkpoin;
             Anim.SetTrigger("Drapo");
+            HealthBar.Vie = 100;
         }
         
     }

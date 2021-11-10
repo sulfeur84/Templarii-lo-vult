@@ -11,5 +11,10 @@ public class Ennemy : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (other.CompareTag("Player"))
+        {
+            HealthBar.Vie -= 10;
+        }
     }
 }
