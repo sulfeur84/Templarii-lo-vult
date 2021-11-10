@@ -9,10 +9,18 @@ public class Controller : MonoBehaviour
     [SerializeField]
     private float _speed = 10f;
     private Vector3 _move;
-    private Vector3 _rotate;
-    private float _angle;
     private Rigidbody rb;
     Vector3 rawInputMovement;
+    public Templariilovult controls;
+
+    void Awake()
+    {
+        controls.Player.Move.performed += context => MovePlayer(context.ReadValue<Vector3>());
+        controls.Player.Attack.performed += context => Attack(context.ReadValue<>());
+        controls.Player.SuperAttack.performed += context => AttackSpe(context.ReadValue<>());
+        controls.Player.Interract.performed += context => Interract(context.ReadValue<>());
+        controls.Player.Look.performed += context => LookAt(context.ReadValue<>());
+    }
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -30,64 +38,39 @@ public class Controller : MonoBehaviour
 
         _move.x = gamepad.leftStick.x.ReadValue();
         _move.z = gamepad.leftStick.y.ReadValue();
-        _rotate = gamepad.rightStick.ReadValue();
         
-       
+    }
 
-        if (UnityEngine.InputSystem.Gamepad.current is UnityEngine.InputSystem.XInput.XInputController)
-        {
-            if (gamepad.leftStick.IsActuated())
-            {
-                rb.MovePosition(rb.position + _move * _speed * Time.fixedDeltaTime);
-            }
-            if (gamepad.rightStick.x.IsActuated())
-            {
-                transform.Rotate(0, _rotate.y, 0);
-            }
-            if (gamepad.rightStick.y.IsActuated())
-            {
-                transform.Rotate(0, -_rotate.y, 0);
-            }
-            if (gamepad.xButton.wasPressedThisFrame)
-            {
-                Debug.Log("X Button is pressed.");
-            }
-            if (gamepad.bButton.wasPressedThisFrame)
-            {
-                Debug.Log("B Button is pressed.");
-            }
-            if (gamepad.yButton.wasPressedThisFrame)
-            {
-                Debug.Log("Y Button is pressed.");
-            }
-            if (gamepad.aButton.wasPressedThisFrame)
-            {
-                Debug.Log("A Button is pressed.");
-            }
-        }
+    public void MovePlayer(Vector3 dir)
+    {
+        rb.MovePosition(rb.position + dir * _speed * Time.fixedDeltaTime);
         
-        if (UnityEngine.InputSystem.Gamepad.current is UnityEngine.InputSystem.DualShock.DualShockGamepad)
+    }
+    public void Attack(InputAction.CallbackContext context)
+    {
+        Debug.Log("X Button is pressed.");
+    }
+    public void AttackSpe(InputAction.CallbackContext context)
+    {
+        Debug.Log("Y Button is pressed.");
+    }
+    public void HelpFriend(InputAction.CallbackContext context)
+    {
+        Debug.Log("B Button is pressed.");
+    }
+    public void Interract(InputAction.CallbackContext context)
+    {
+        Debug.Log("A Button is pressed.");
+    }
+    public void LookAt(InputAction.CallbackContext context)
+    {
+        if (Gamepad.current.rightStick.x.IsActuated())
         {
-            if (gamepad.leftStick.IsActuated())
-            {
-                rb.MovePosition(rb.position + _move * _speed * Time.fixedDeltaTime);
-            }
-            if (gamepad.squareButton.wasPressedThisFrame)
-            {
-                Debug.Log("Square Button is pressed.");
-            }
-            if (gamepad.circleButton.wasPressedThisFrame)
-            {
-                Debug.Log("Circle Button is pressed.");
-            }
-            if (gamepad.triangleButton.wasPressedThisFrame)
-            {
-                Debug.Log("Triangle Button is pressed.");
-            }
-            if (gamepad.crossButton.wasPressedThisFrame)
-            {
-                Debug.Log("Cross Button is pressed.");
-            }
+            transform.Rotate(0, Gamepad.current.rightStick.x.ReadValue(), 0);
+        }
+        if (Gamepad.current.rightStick.y.IsActuated())
+        {
+            transform.Rotate(0, Gamepad.current.rightStick.y.ReadValue(), 0);
         }
     }
 }
