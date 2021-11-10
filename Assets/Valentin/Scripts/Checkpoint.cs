@@ -7,23 +7,22 @@ public class Checkpoint : MonoBehaviour
 {
     public Animator Anim;
     public bool IsOn = false;
-    Vector3 apparition = new Vector3(0,1,10);
+    private Vector3 Checkpoin = new Vector3(0, 0 , 0);
+    public GameObject SpwnPoint;
+
+    public void Start()
+    {
+        Checkpoin = SpwnPoint.gameObject.transform.position;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+            RespawnScript.Apparition = Checkpoin;
             Anim.SetTrigger("Drapo");
-            IsOn = true;
         }
         
     }
-
-    private void Update()
-    {
-
-        if (IsOn)
-        {
-          
-        }
-    }
+    
 }
