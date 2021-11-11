@@ -6,23 +6,60 @@ using UnityEngine.InputSystem.XInput;
 
 public class Controller : MonoBehaviour
 {
+    private PlayersControllers playerControls;
+
     [SerializeField]
-    private float _speed = 10f;
+    private float _speed;
     private Vector3 _move;
     private Rigidbody rb;
-    Vector3 rawInputMovement;
-    public Templariilovult controls;
 
-    void Awake()
+    private void Awake()
     {
-        controls.Player.Move.performed += context => MovePlayer(context.ReadValue<Vector3>());
-        //controls.Player.Attack.performed += context => Attack(context.ReadValue<>());
-        //controls.Player.SuperAttack.performed += context => AttackSpe(context.ReadValue<>());
-        //controls.Player.Interract.performed += context => Interract(context.ReadValue<>());
-        //controls.Player.Look.performed += context => LookAt(context.ReadValue<>());
+        playerControls = new PlayersControllers();
     }
+
+    private void OnEnable()
+    {
+        playerControls.Enable();
+    }
+
+    private void OnDisable()
+    {
+        playerControls.Disable();
+        playerControls.Player.Attack.started -= Attack;
+        playerControls.Player.Move.started -= MovePlayer;
+        playerControls.Player.AttackSpe.started -= AttackSpe;
+        playerControls.Player.HelpFriend.started -= HelpFriend;
+        playerControls.Player.Interract.started -= Interract;
+        playerControls.Player.Look.started -= LookAt;
+    }
+
     void Start()
     {
+        playerControls.Player.Move.started += MovePlayer;
+        playerControls.Player.Move.performed += MovePlayer;
+        playerControls.Player.Move.canceled += MovePlayer;
+
+        playerControls.Player.Attack.started += Attack;
+        playerControls.Player.Attack.performed += Attack;
+        playerControls.Player.Attack.canceled += Attack;
+
+        playerControls.Player.AttackSpe.started += AttackSpe;
+        playerControls.Player.AttackSpe.performed += AttackSpe;
+        playerControls.Player.AttackSpe.canceled += AttackSpe;
+
+        playerControls.Player.HelpFriend.started += HelpFriend;
+        playerControls.Player.HelpFriend.performed += HelpFriend;
+        playerControls.Player.HelpFriend.canceled += HelpFriend;
+
+        playerControls.Player.Interract.started += Interract;
+        playerControls.Player.Interract.performed += Interract;
+        playerControls.Player.Interract.canceled += Interract;
+
+        playerControls.Player.Look.started += LookAt;
+        playerControls.Player.Look.performed += LookAt;
+        playerControls.Player.Look.canceled += LookAt;
+
         rb = GetComponent<Rigidbody>();
     }
 
@@ -36,20 +73,18 @@ public class Controller : MonoBehaviour
             return;
         }
 
+        
         _move.x = gamepad.leftStick.x.ReadValue();
         _move.z = gamepad.leftStick.y.ReadValue();
         
     }
 
-    public void MovePlayer(Vector3 dir)
+    public void MovePlayer(InputAction.CallbackContext context)
     {
-        rb.MovePosition(rb.position + dir * _speed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + _move * _speed * Time.fixedDeltaTime);
         
     }
-    public void Attack(InputAction.CallbackContext context)
-    {
-        Debug.Log("X Button is pressed.");
-    }
+    
     public void AttackSpe(InputAction.CallbackContext context)
     {
         Debug.Log("Y Button is pressed.");
@@ -63,14 +98,12 @@ public class Controller : MonoBehaviour
         Debug.Log("A Button is pressed.");
     }
     public void LookAt(InputAction.CallbackContext context)
+    {        
+        transform.Rotate(0, Gamepad.current.rightStick.x.ReadValue() + Gamepad.current.rightStick.y.ReadValue(), 0);        
+    }
+
+    public void Attack(InputAction.CallbackContext context)
     {
-        if (Gamepad.current.rightStick.x.IsActuated())
-        {
-            transform.Rotate(0, Gamepad.current.rightStick.x.ReadValue(), 0);
-        }
-        if (Gamepad.current.rightStick.y.IsActuated())
-        {
-            transform.Rotate(0, Gamepad.current.rightStick.y.ReadValue(), 0);
-        }
+        Debug.Log("X Button is pressed.");
     }
 }
