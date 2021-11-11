@@ -15,8 +15,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Valentin/Scripts/LetsStart.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Geoffrey/Actions/Templarii lo vult.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Valentin/Scripts/Cameraman.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Geoffrey/Actions/Templarii lo vult.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="20gSgtTBKsWGvXJH8YRlB79E7ev" />
   <component name="ProjectViewState">
@@ -76,6 +76,7 @@
       <workItem from="1636465115675" duration="8135000" />
       <workItem from="1636540833481" duration="1185000" />
       <workItem from="1636549648592" duration="6410000" />
+      <workItem from="1636625214367" duration="199000" />
     </task>
     <servers />
   </component>
