@@ -16,10 +16,10 @@ public class Controller : MonoBehaviour
     void Awake()
     {
         controls.Player.Move.performed += context => MovePlayer(context.ReadValue<Vector3>());
-        controls.Player.Attack.performed += context => Attack(context.ReadValue<>());
-        controls.Player.SuperAttack.performed += context => AttackSpe(context.ReadValue<>());
-        controls.Player.Interract.performed += context => Interract(context.ReadValue<>());
-        controls.Player.Look.performed += context => LookAt(context.ReadValue<>());
+        //controls.Player.Attack.performed += context => Attack(context.ReadValue<>());
+        //controls.Player.SuperAttack.performed += context => AttackSpe(context.ReadValue<>());
+        //controls.Player.Interract.performed += context => Interract(context.ReadValue<>());
+        //controls.Player.Look.performed += context => LookAt(context.ReadValue<>());
     }
     void Start()
     {
