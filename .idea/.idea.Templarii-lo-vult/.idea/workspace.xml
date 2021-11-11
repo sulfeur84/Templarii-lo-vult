@@ -14,9 +14,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Valentin/Scripts/LetsStart.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Geoffrey/Actions/Templarii lo vult.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Valentin/Scripts/Cameraman.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Valentin/Scripts/LetsStart.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Yhoann/script/trigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Geoffrey/Actions/Templarii lo vult.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Yhoann/script/enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Yhoann/script/trigger.cs" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="20gSgtTBKsWGvXJH8YRlB79E7ev" />
   <component name="ProjectViewState">
@@ -47,9 +56,8 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
-        <list />
+        <set />
       </option>
       <method v="2" />
     </configuration>
@@ -57,9 +65,8 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
-        <list />
+        <set />
       </option>
       <method v="2" />
     </configuration>
@@ -76,6 +83,7 @@
       <workItem from="1636465115675" duration="8135000" />
       <workItem from="1636540833481" duration="1185000" />
       <workItem from="1636549648592" duration="6410000" />
+      <workItem from="1636645753033" duration="1939000" />
     </task>
     <servers />
   </component>
