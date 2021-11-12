@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\titou\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\titou\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Templarii-lo-vult.174097329.00" t="ExcludeRecursive" />
+    <e p="C:\Users\titou\Desktop\logiciel et jeux\projet moteur de jeu\projet Unity\Templarii-lo-vult" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Geoffrey" t="Include">
+          <e p="Actions" t="Include">
+            <e p="Templarii lo vult.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Controller.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Valentin" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="BaboucheGoBrrr.cs" t="Include" />
+            <e p="BaboucheScript.cs" t="Include" />
+            <e p="BonusArmeTemp.cs" t="Include" />
+            <e p="Cameraman.cs" t="Include" />
+            <e p="Checkpoint.cs" t="Include" />
+            <e p="Ennemy.cs" t="Include" />
+            <e p="HealthBar.cs" t="Include" />
+            <e p="LetsStart.cs" t="Include" />
+            <e p="PiouPiou.cs" t="Include" />
+            <e p="PlayerMoovement.cs" t="Include" />
+            <e p="RespawnScript.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Yhoann" t="Include">
+          <e p="script" t="Include">
+            <e p="enemy.cs" t="Include" />
+            <e p="trigger.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+      <e p="Templarii-lo-vult.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
