@@ -249,10 +249,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 621567455fd1c4ceb811cc8a00b6a1a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NotificationBehavior: 2
+  m_NotificationBehavior: 0
   m_MaxPlayerCount: 2
   m_AllowJoining: 1
-  m_JoinBehavior: 1
+  m_JoinBehavior: 0
   m_PlayerJoinedEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -288,7 +288,7 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
---- !u!1001 &1161246293
+--- !u!1001 &1144245064
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -301,7 +301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 395419124899507348, guid: 2516434510e8bcb47921ba8c093a2d1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.15735245
+      value: 1.5870018
       objectReference: {fileID: 0}
     - target: {fileID: 395419124899507348, guid: 2516434510e8bcb47921ba8c093a2d1d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -309,7 +309,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 395419124899507348, guid: 2516434510e8bcb47921ba8c093a2d1d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.15712929
+      value: -0.16410446
       objectReference: {fileID: 0}
     - target: {fileID: 395419124899507348, guid: 2516434510e8bcb47921ba8c093a2d1d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -339,6 +339,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 395419124899507352, guid: 2516434510e8bcb47921ba8c093a2d1d, type: 3}
+      propertyPath: speedMove
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 395419124899507352, guid: 2516434510e8bcb47921ba8c093a2d1d, type: 3}
+      propertyPath: speedRotate
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 395419124899507353, guid: 2516434510e8bcb47921ba8c093a2d1d, type: 3}
       propertyPath: m_Name
       value: Player
@@ -349,11 +357,11 @@ PrefabInstance:
       objectReference: {fileID: -944628639613478452, guid: 11ecfe5ed7b0ef6498d5d6bbd2440923, type: 3}
     - target: {fileID: 4860753223660909072, guid: 2516434510e8bcb47921ba8c093a2d1d, type: 3}
       propertyPath: m_DefaultControlScheme
-      value: PS4Gamepad
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4860753223660909072, guid: 2516434510e8bcb47921ba8c093a2d1d, type: 3}
       propertyPath: m_NeverAutoSwitchControlSchemes
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2516434510e8bcb47921ba8c093a2d1d, type: 3}
