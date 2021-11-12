@@ -30,7 +30,6 @@ public class PLAYERBONUSMALUS : MonoBehaviour
         if (other.name.StartsWith("BuMa"))
         {
             //BURGER MALUS
-            int temps = 1;
             timer = new System.Timers.Timer();
             timer.Elapsed += new ElapsedEventHandler(BurgerMalus);
             timer.Interval = 1000;

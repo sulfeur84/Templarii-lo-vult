@@ -332,6 +332,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointDeVie: 100
+  isSpeed: 0
+  "vitesseDeD\xE9placement": 1
+  dommage: 10
+  secondesQuiPassent: 0
 --- !u!1 &994147953
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,7 +443,7 @@ GameObject:
   - component: {fileID: 1813399223}
   - component: {fileID: 1813399222}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: BuMa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
