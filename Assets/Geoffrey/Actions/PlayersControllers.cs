@@ -125,6 +125,61 @@ public class @PlayersControllers : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""2D Vector"",
+                    ""id"": ""e317fc61-b2b1-4272-8d30-89f1fa6c32ee"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""a19b8c16-513c-4112-bb78-47c16e91456b"",
+                    ""path"": ""<DualShockGamepad>/leftStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""PS4Gamepad"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""c6afa7e1-79a3-4dd0-b884-4436e30aba8f"",
+                    ""path"": ""<DualShockGamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""PS4Gamepad"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""f7f8e18e-bbe6-483a-9fbf-854ff39e1dc4"",
+                    ""path"": ""<DualShockGamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""PS4Gamepad"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""01634dd7-585e-49f1-939c-d05eb8a6b7a7"",
+                    ""path"": ""<DualShockGamepad>/leftStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""PS4Gamepad"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""2D Vector"",
                     ""id"": ""666ef0d5-72eb-413a-b2c5-841d1bbe7143"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
@@ -179,12 +234,78 @@ public class @PlayersControllers : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""d52bfdd1-f539-4370-8836-e37eb1478ee2"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""1e96e514-7577-440c-8b6a-37afeee8ec12"",
+                    ""path"": ""<DualShockGamepad>/rightStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""PS4Gamepad"",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""da786bf4-86ad-4725-b630-4148e52c9852"",
+                    ""path"": ""<DualShockGamepad>/rightStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""PS4Gamepad"",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""5228c6d4-baad-4802-9579-31fe640d0b88"",
+                    ""path"": ""<DualShockGamepad>/rightStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""PS4Gamepad"",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""a26c4cb6-9e9e-4912-a9e9-e623d7e3f6f1"",
+                    ""path"": ""<DualShockGamepad>/rightStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""PS4Gamepad"",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
                     ""name"": """",
                     ""id"": ""cbe374ff-8d2b-4a9b-acd7-d0cfc29c9283"",
                     ""path"": ""<XInputController>/buttonWest"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""XboxGamepad"",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2bb77623-e841-45da-a29a-11a55083a46a"",
+                    ""path"": ""<DualShockGamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""PS4Gamepad"",
                     ""action"": ""Attack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -202,11 +323,33 @@ public class @PlayersControllers : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""9dd46818-bfa2-48e6-af0a-ce239f9c7af5"",
+                    ""path"": ""<DualShockGamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""PS4Gamepad"",
+                    ""action"": ""Attack Spe"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""3f58dd95-cd19-4600-ad81-030eced5eae1"",
                     ""path"": ""<XInputController>/buttonEast"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""XboxGamepad"",
+                    ""action"": ""HelpFriend"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8a14f1fc-9a76-4dae-b85b-e2f96fb00ade"",
+                    ""path"": ""<DualShockGamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""PS4Gamepad"",
                     ""action"": ""HelpFriend"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -221,6 +364,17 @@ public class @PlayersControllers : IInputActionCollection, IDisposable
                     ""action"": ""Interract"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""65cfe2c2-8dde-4827-b702-2cb4e995a3e0"",
+                    ""path"": ""<DualShockGamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""PS4Gamepad"",
+                    ""action"": ""Interract"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -232,6 +386,17 @@ public class @PlayersControllers : IInputActionCollection, IDisposable
             ""devices"": [
                 {
                     ""devicePath"": ""<XboxOneGampadiOS>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""PS4Gamepad"",
+            ""bindingGroup"": ""PS4Gamepad"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<DualShock4GampadiOS>"",
                     ""isOptional"": false,
                     ""isOR"": false
                 }
@@ -372,6 +537,15 @@ public class @PlayersControllers : IInputActionCollection, IDisposable
         {
             if (m_XboxGamepadSchemeIndex == -1) m_XboxGamepadSchemeIndex = asset.FindControlSchemeIndex("XboxGamepad");
             return asset.controlSchemes[m_XboxGamepadSchemeIndex];
+        }
+    }
+    private int m_PS4GamepadSchemeIndex = -1;
+    public InputControlScheme PS4GamepadScheme
+    {
+        get
+        {
+            if (m_PS4GamepadSchemeIndex == -1) m_PS4GamepadSchemeIndex = asset.FindControlSchemeIndex("PS4Gamepad");
+            return asset.controlSchemes[m_PS4GamepadSchemeIndex];
         }
     }
     public interface IPlayerActions

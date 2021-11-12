@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.XInput;
 
+[RequireComponent(typeof(PlayerInput))]
 public class Controller : MonoBehaviour
 {
     private PlayersControllers playerControls;
@@ -87,15 +88,15 @@ public class Controller : MonoBehaviour
     
     public void AttackSpe(InputAction.CallbackContext context)
     {
-        Debug.Log("Y Button is pressed.");
+        Debug.Log("Attack Spe activate !");
     }
     public void HelpFriend(InputAction.CallbackContext context)
     {
-        Debug.Log("B Button is pressed.");
+        Debug.Log("You'r rescue your friend.");
     }
     public void Interract(InputAction.CallbackContext context)
     {
-        Debug.Log("A Button is pressed.");
+        Debug.Log("Interract");
     }
     public void LookAt(InputAction.CallbackContext context)
     {        
@@ -104,6 +105,6 @@ public class Controller : MonoBehaviour
 
     public void Attack(InputAction.CallbackContext context)
     {
-        Debug.Log("X Button is pressed.");
+        Debug.Log("Attack !");
     }
 }
